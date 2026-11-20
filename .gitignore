@@ -1,0 +1,7 @@
+.env
+.env.new
+decisions.md
+compose.override.yaml
+jobs/*
+!jobs/.gitkeep
+data/

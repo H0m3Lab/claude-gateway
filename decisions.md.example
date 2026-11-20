@@ -1,0 +1,11 @@
+# Standing decisions - the AI reads these on every job. Copy to decisions.md and edit.
+# Plain language. Shared by every app that uses this gateway, so write rules about your setup,
+# and put job-specific sections under their own heading.
+
+## About my setup
+- One Docker host ("my-server"), apps run with Docker Compose, data on ZFS with snapshots.
+- Internet-facing apps: nginx-proxy-manager, vaultwarden, nextcloud. Everything else is home-only.
+
+## Rules
+- Database major upgrades are planned migrations, never routine updates.
+- WordPress: change the staging copy first, then production.

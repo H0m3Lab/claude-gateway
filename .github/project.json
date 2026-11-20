@@ -1,0 +1,20 @@
+{
+  "name": "Claude gateway",
+  "slug": "claude-gateway",
+  "tagline": "Claude Code as one shared service for your self-hosted apps.",
+  "description": "A small container that runs Claude Code headless behind an internal HTTP API. Any app on your Docker host can send it a job and get text back, while Claude keeps one memory of your setup and your rules. Claude gets no shell and no access to the host.",
+  "status": "early",
+  "features": [
+    "POST /ask {job, input} for any app on the Docker network",
+    "Jobs are plain Markdown files",
+    "One shared workspace: your rules plus Claude's own notes per job",
+    "No shell, no Docker socket, no published ports",
+    "API key or Claude subscription token"
+  ],
+  "stack": ["Node.js", "Claude Code", "Docker"],
+  "repository": "https://github.com/H0m3Lab/claude-gateway",
+  "documentation": "https://github.com/H0m3Lab/claude-gateway#readme",
+  "changelog": "https://github.com/H0m3Lab/claude-gateway/blob/main/CHANGELOG.md",
+  "license": "MIT",
+  "screenshots": []
+}
